@@ -1,0 +1,148 @@
+/* common style */
+body {
+  background-color: #f3f1ff;
+  font-family: ;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  width: 870px;
+  padding: 30px;
+  background-color: #ffffff;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+hr {
+  margin: 1px solid #d1d1d1;
+  margin-bottom: 28px;
+}
+/* top player */
+.top-players {
+}
+.top-title {
+  color: #562eff;
+  margin: 0;
+}
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 30px;
+  padding-top: 30px;
+  margin-bottom: 29px;
+}
+.player {
+  display: flex;
+  align-items: center;
+}
+.player img {
+  width: 50px;
+  height: 50px;
+}
+.player-title {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+/* top blog style */
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 30px;
+  padding-top: 30px;
+  margin-bottom: 29px;
+}
+
+.blog {
+  display: flex;
+  width: 350px;
+}
+.blog-thumbnail img {
+  width: 180px;
+}
+.blog-title {
+  margin-left: 10px;
+}
+.author {
+}
+.author a {
+  text-decoration: none;
+  color: mediumblue;
+}
+
+/* latest-chorse */
+.latest-chorse{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 15px;
+
+}
+.chorse{
+  border: 1px solid rgba(240, 238, 238, 0.418);
+  border-radius: 20px;
+  padding: 10px;
+}
+.banner img{
+  width:250px;
+}
+.chorse-author{
+  color: red;
+}
+.fa-star.ratings{
+  color: orange;
+}
+.chorse-info{
+  display: flex;
+    font-size: 18px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chorse-duration{
+  border-radius: 15px;
+
+  background-color: rgba(175, 7, 7, 0.493);
+  color: rgba(218, 10, 10, 0.438);
+  padding: 3px 5px;
+}
+
+/* mobile scren */
+@media only screen and (max-width:688px) {
+  .container{
+      width: 100%;
+  }
+  .players{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .blogs,.latest-chorse {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.player, .blog{
+   flex-direction: column;
+}
+}
+
+
+/* tablet screan */
+@media only screen and (min-width:688px) and (max-width:992px) {
+  .container{
+      width: 100%;
+  }
+  .players{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .blogs,.latest-chorse {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.player, .blog{
+   flex-direction: column;
+   align-items: center;
+}
+}
+
+
